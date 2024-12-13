@@ -1,6 +1,6 @@
 import Spiner from '../Spinner/Spiner';
-import Players from '../Players/Players';
-import { data } from '../../data/data';
+// import Players from '../Players/Players';
+// import { DATA } from '../../data/data';
 
 import styles from './Main.module.less';
 
@@ -16,7 +16,7 @@ function Main() {
         </div>
       </div>
 
-      <Players players={data}/>
+      {/* <Players players={DATA}/> */}
     </div>
   );
 }
