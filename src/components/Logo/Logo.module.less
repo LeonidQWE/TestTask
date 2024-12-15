@@ -1,9 +1,7 @@
 @import '../../styles/variables/variables.less';
+@import '../../styles/mixins/mixins.less';
 
 .logo {
-  font-family: @font-montserrat;
+  .font(@font-montserrat, @h1-font-size, @line-height-base, @font-weight-normal);
   text-align: center;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 1.2;
 }
