@@ -19,12 +19,6 @@ function Main() {
     <div className={styles.main}>
       <Logo />
       <Spiner/>
-      <div>
-        <div>
-          <span>LongUserName</span>
-          <img src="star" alt="star" />
-        </div>
-      </div>
 
       {/* <Players players={DATA}/> */}
     </div>
