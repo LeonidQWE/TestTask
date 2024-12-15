@@ -1,0 +1,36 @@
+@import '../../styles/variables/variables.less';
+@import '../../styles/mixins/mixins.less';
+
+.btn {
+  .font(@font-montserrat, @font-size-normal, @line-height-base, @font-weight-bold);
+  padding: 11px 3px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 4px;
+  text-align: center;
+  width: 80px;
+  transition: 0.3s ease-in-out;
+
+  &.active {
+    background-color: @btn-color;
+    color: @light;
+
+    @media (min-width: 768px) {
+      &:hover {
+        background-color: @btn-color-hover;
+      }
+    }
+
+    &:active {
+      background-color: @btn-color-pressed;
+    }
+  }
+
+  &.disabled {
+    background-color: @btn-color-disabled;
+    color: @white-300;
+  }
+}
+
+
+

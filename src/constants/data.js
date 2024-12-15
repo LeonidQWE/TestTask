@@ -29,7 +29,7 @@ export const DATA = {
     },
     {
       id: 3,
-      status: 'registering',
+      status: 'cancelled',
       NL: 'NL OFC/pineapple prg',
       name: 'Hourly Freeroll',
       date: '12:00 pm, 28 July',
@@ -40,7 +40,7 @@ export const DATA = {
     },
     {
       id: 4,
-      status: 'registering',
+      status: 'cancelled',
       NL: 'NL 2-7 Triple Draw',
       name: 'OFC Pineapple',
       date: '12:00 pm, 28 July',
@@ -51,7 +51,7 @@ export const DATA = {
     },
     {
       id: 5,
-      status: 'registering',
+      status: 'cancelled',
       NL: 'NL 2-7 Triple Draw',
       name: 'OFC Pineapple',
       date: '12:00 pm, 28 July',
