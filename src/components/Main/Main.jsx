@@ -1,3 +1,4 @@
+import Logo from '../Logo/Logo';
 import Spiner from '../Spinner/Spiner';
 // import Players from '../Players/Players';
 // import { DATA } from '../../data/data';
@@ -7,7 +8,7 @@ import styles from './Main.module.less';
 function Main() {
   return (
     <div className={styles.main}>
-      <h1 className={styles.title}>Poker</h1>
+      <Logo />
       <Spiner/>
       <div>
         <div>
