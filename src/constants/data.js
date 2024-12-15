@@ -1,9 +1,9 @@
 export const DATA = {
-  useName: 'LongUserName',
+  userName: 'LongUserName',
   rating: 5,
   sum: '$100,500.00',
   progress: 70,
-  image: '',
+  avatar: '/src/assets/images/avatar.png',
   players: [
     {
       id: 1,
