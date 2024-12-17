@@ -1,7 +1,7 @@
 export const DATA = {
   userName: 'LongUserName',
   rating: 5,
-  sum: '$100,500.00',
+  balance: '$100,500.00',
   progress: 70,
   avatar: '/src/assets/images/avatar.png',
   players: [

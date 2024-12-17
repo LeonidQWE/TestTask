@@ -9,17 +9,16 @@ function Main() {
   const {
     userName,
     rating,
-    sum,
+    balance,
     avatar
   } = DATA;
 
-  console.log(userName, rating, sum, avatar);
+  console.log(userName, rating, balance, avatar);
 
   return (
     <div className={styles.main}>
       <Logo />
       <Spiner/>
-
       {/* <Players players={DATA}/> */}
     </div>
   );

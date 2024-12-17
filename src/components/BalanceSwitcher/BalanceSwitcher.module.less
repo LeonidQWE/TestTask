@@ -1,0 +1,73 @@
+@import '../../styles/variables/variables.less';
+@import '../../styles/mixins/mixins.less';
+
+.balanceSwitcher {
+  background-color: @blue-400;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 125px;
+  height: 26px;
+  border-radius: 24px;
+  position: relative;
+  padding: 0 8px 0 4px;
+  transition: .3s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  @media (min-width: 768px) {
+    &:hover .switcherMove {
+      background-color: @green-100;
+    }
+  }
+
+  &:active .switcherMove {
+    background-color: @green-300;
+  }
+}
+
+.switcherIconContainer {
+  color: @light;
+  width: 24px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+
+.switcherText {
+  font-family: @font-montserrat;
+  line-height: @line-height-base;
+  font-size: @font-size-medium;
+  font-weight: 600;
+  z-index: 1;
+
+  &.balance {
+    font-weight: @font-weight-normal;
+  }
+
+  &.text {
+    font-weight: @font-weight-semibold;
+  }
+}
+
+.checkbox {
+  display: none;
+
+  &:checked + .switcherMove {
+    width: 32px;
+  }
+}
+
+.switcherMove {
+  background-color: @success;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 16px;
+}
+
+
