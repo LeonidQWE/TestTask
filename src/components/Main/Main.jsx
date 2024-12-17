@@ -3,7 +3,6 @@ import Spiner from '../Spinner/Spiner';
 // import Players from '../Players/Players';
 import { DATA } from '../../constants/data';
 import styles from './Main.module.less';
-import Button from '../Button/Button';
 
 function Main() {
   console.log(DATA);
@@ -20,7 +19,6 @@ function Main() {
     <div className={styles.main}>
       <Logo />
       <Spiner/>
-      <Button status={'registering'}/>
 
       {/* <Players players={DATA}/> */}
     </div>
