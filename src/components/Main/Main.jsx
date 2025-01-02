@@ -14,8 +14,6 @@ function Main() {
     avatar
   } = DATA;
 
-  console.log(userName, rating, balance, avatar);
-
   return (
     <div className={styles.main}>
       <Logo />
