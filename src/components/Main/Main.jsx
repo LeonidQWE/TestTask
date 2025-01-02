@@ -3,6 +3,7 @@ import Spiner from '../Spinner/Spiner';
 // import Players from '../Players/Players';
 import { DATA } from '../../constants/data';
 import styles from './Main.module.less';
+import UserInfo from '../UserInfo/UserInfo';
 
 function Main() {
   console.log(DATA);
@@ -20,6 +21,11 @@ function Main() {
       <Logo />
       <Spiner/>
       {/* <Players players={DATA}/> */}
+      <UserInfo
+        userName={userName}
+        rating={rating}
+        avatar={avatar}
+        balance={balance}/>
     </div>
   );
 }
