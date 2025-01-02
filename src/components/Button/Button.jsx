@@ -17,7 +17,7 @@ function Button ({status}) {
 }
 
 Button.propTypes = {
-  status: PropTypes.string
+  status: PropTypes.string,
 };
 
 export default Button

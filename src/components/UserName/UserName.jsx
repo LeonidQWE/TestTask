@@ -8,7 +8,7 @@ function UserName ({userName}) {
 }
 
 UserName.propTypes = {
-  userName: PropTypes.string
+  userName: PropTypes.string,
 };
 
 export default UserName

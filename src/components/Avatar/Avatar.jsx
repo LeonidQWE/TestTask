@@ -10,7 +10,7 @@ function Avatar ({ avatarSrc }) {
 }
 
 Avatar.propTypes = {
-  avatarSrc: PropTypes.string
+  avatarSrc: PropTypes.string,
 };
 
 export default Avatar;

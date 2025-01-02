@@ -9,7 +9,7 @@ function UserInfo ({
   userName,
   rating,
   avatar,
-  balance
+  balance,
 }) {
 
   return (
@@ -28,7 +28,7 @@ UserInfo.propTypes = {
   userName: PropTypes.string,
   rating: PropTypes.number,
   avatar: PropTypes.string,
-  balance: PropTypes.string
+  balance: PropTypes.string,
 }
 
 export default UserInfo
