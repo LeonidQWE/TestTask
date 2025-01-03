@@ -1,0 +1,7 @@
+.generate-spiner-items(@n, @i: 1) when (@i =< @n) {
+  &:nth-child(@{i}) {
+    transform: rotate(@i * 30deg) translate(0, calc(50% - @spiner-radius));
+    animation-delay: @i * @time;
+  }
+  .generate-spiner-items(@n, (@i + 1));
+}

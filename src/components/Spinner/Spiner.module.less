@@ -1,19 +1,37 @@
+@import '../../styles/variables/variables.less';
+@import '../../styles/mixins/mixins.less';
+
+@spiner-size: 50px;
+@spiner-radius: @spiner-size / 2;
+@dot-size: 8px;
+@time: 0.15s;
+
 .spiner {
-  width: 50px;
-  height: 50px;
+  width: @spiner-size;
+  height: @spiner-size;
+  position: relative;
   margin: 16px auto;
-  border-radius: 50%;
-  border: 5px dotted #00D749;
-  animation: spin 5s linear infinite;
+
+  &Item {
+    width: @dot-size;
+    height: @dot-size;
+    background-color: @success;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - @dot-size / 2);
+    left: calc(50% - @dot-size / 2);
+    animation: fadeit 1.8s linear infinite;
+    opacity: 0;
+
+    .generate-spiner-items(12);
+  }
 }
 
-@keyframes spin {
+@keyframes fadeit {
   from {
-    transform: rotate(0deg);
+    opacity: 1;
   }
-
   to {
-    transform: rotate(360deg);
+    opacity: 0;
   }
 }
-
