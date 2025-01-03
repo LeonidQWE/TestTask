@@ -3,6 +3,7 @@ import Spiner from '../Spinner/Spiner';
 import UserInfo from '../UserInfo/UserInfo';
 import { DATA } from '../../constants/data';
 import styles from './Main.module.less';
+import Progress from '../Progress/Progress';
 
 function Main() {
   console.log(DATA);
@@ -10,7 +11,8 @@ function Main() {
     userName,
     rating,
     balance,
-    avatar
+    avatar,
+    progress,
   } = DATA;
 
   return (
@@ -22,6 +24,7 @@ function Main() {
         rating={rating}
         avatar={avatar}
         balance={balance}/>
+      <Progress progress={progress}/>
     </div>
   );
 }
