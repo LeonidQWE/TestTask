@@ -13,7 +13,10 @@ function Main() {
     balance,
     avatar,
     progress,
+    players,
   } = DATA;
+
+  console.log(players[0]);
 
   return (
     <div className={styles.main}>
