@@ -4,6 +4,7 @@ import UserInfo from '../UserInfo/UserInfo';
 import { DATA } from '../../constants/data';
 import styles from './Main.module.less';
 import Progress from '../Progress/Progress';
+import Player from '../Player/Player';
 
 function Main() {
   console.log(DATA);
@@ -16,7 +17,7 @@ function Main() {
     players,
   } = DATA;
 
-  console.log(players[0]);
+  const player = players[0];
 
   return (
     <div className={styles.main}>
@@ -28,6 +29,7 @@ function Main() {
         avatar={avatar}
         balance={balance}/>
       <Progress progress={progress}/>
+      <Player player={player}/>
     </div>
   );
 }
