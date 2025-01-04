@@ -15,4 +15,4 @@ TournamentStatus.propTypes = {
   status: PropTypes.string,
 }
 
-export default TournamentStatus
+export default TournamentStatus;

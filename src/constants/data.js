@@ -4,7 +4,7 @@ export const DATA = {
   balance: '$100,500.00',
   progress: 70,
   avatar: '/src/assets/images/avatar.png',
-  players: [
+  tournaments: [
     {
       id: 1,
       status: 'registering',
@@ -55,9 +55,9 @@ export const DATA = {
       NL: 'NL 2-7 Triple Draw',
       name: 'OFC Pineapple',
       date: '12:00 pm, 28 July',
-      countPlayers: 1000,
-      countAllPlayers: 1000,
-      points: 1000000,
+      countPlayers: 0,
+      countAllPlayers: 100,
+      points: 146,
       isChoose: false,
     },
     {

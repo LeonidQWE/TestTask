@@ -11,4 +11,4 @@ UserName.propTypes = {
   userName: PropTypes.string,
 };
 
-export default UserName
+export default UserName;

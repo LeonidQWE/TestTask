@@ -3,6 +3,7 @@ import StatisticsItem from '../StatisticsItem/StatisticsItem';
 import Time from '../../assets/icons/time.svg?react';
 import Players from '../../assets/icons/players.svg?react';
 import Tourney from '../../assets/icons/tourney.svg?react';
+import styles from './TournamentStatistics.module.less';
 
 function TournamentStatistics ({
   date,
@@ -12,23 +13,27 @@ function TournamentStatistics ({
 }) {
   const schema = [
     {
-      Icon: Time,
-      value: date,
+      Icon: <Time className={styles.icon}/>,
+      value: `${date}`,
     },
     {
-      Icon: Players,
+      Icon: <Players className={styles.icon}/>,
       value: `${countPlayers}/${countAllPlayers}`,
     },
     {
-      Icon: Tourney,
-      value: points,
+      Icon: <Tourney className={styles.icon}/>,
+      value: `${points}`,
     },
   ]
 
   return (
-    <div>
+    <div className={styles.statistics}>
       {schema.map((item, index) => (
-        <StatisticsItem key={index} Icon={item.Icon} value={item.value} />
+        <StatisticsItem
+          key={index}
+          Icon={item.Icon}
+          value={item.value}
+        />
       ))}
     </div>
   )
@@ -41,4 +46,4 @@ TournamentStatistics.propTypes = {
   points: PropTypes.number,
 }
 
-export default TournamentStatistics
+export default TournamentStatistics;

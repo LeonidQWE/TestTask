@@ -23,4 +23,4 @@ Tournament.propTypes = {
   player: PropTypes.object,
 }
 
-export default Tournament
+export default Tournament;

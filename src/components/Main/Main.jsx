@@ -7,17 +7,14 @@ import Progress from '../Progress/Progress';
 import Tournament from '../Tournament/Tournament';
 
 function Main() {
-  console.log(DATA);
   const {
     userName,
     rating,
     balance,
     avatar,
     progress,
-    players,
+    tournaments,
   } = DATA;
-
-  const player = players[0];
 
   return (
     <div className={styles.main}>
@@ -29,7 +26,7 @@ function Main() {
         avatar={avatar}
         balance={balance}/>
       <Progress progress={progress}/>
-      <Tournament player={player}/>
+      {tournaments.map((player, index) => <Tournament key={index} player={player} />)}
     </div>
   );
 }

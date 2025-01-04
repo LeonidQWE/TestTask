@@ -16,4 +16,4 @@ Progress.propTypes = {
   progress: PropTypes.number,
 }
 
-export default Progress
+export default Progress;

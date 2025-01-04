@@ -20,4 +20,4 @@ Button.propTypes = {
   status: PropTypes.string,
 };
 
-export default Button
+export default Button;

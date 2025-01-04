@@ -31,4 +31,4 @@ UserInfo.propTypes = {
   balance: PropTypes.string,
 }
 
-export default UserInfo
+export default UserInfo;

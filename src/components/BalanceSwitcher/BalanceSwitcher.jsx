@@ -34,4 +34,4 @@ BalanceSwitcher.propTypes = {
   balance: PropTypes.string
 }
 
-export default BalanceSwitcher
+export default BalanceSwitcher;
