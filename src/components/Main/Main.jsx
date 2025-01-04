@@ -4,7 +4,7 @@ import UserInfo from '../UserInfo/UserInfo';
 import { DATA } from '../../constants/data';
 import styles from './Main.module.less';
 import Progress from '../Progress/Progress';
-import Player from '../Player/Player';
+import Tournament from '../Tournament/Tournament';
 
 function Main() {
   console.log(DATA);
@@ -29,7 +29,7 @@ function Main() {
         avatar={avatar}
         balance={balance}/>
       <Progress progress={progress}/>
-      <Player player={player}/>
+      <Tournament player={player}/>
     </div>
   );
 }

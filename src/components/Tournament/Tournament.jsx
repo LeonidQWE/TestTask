@@ -1,13 +1,13 @@
 import PropTypes from 'prop-types';
-import styles from './Player.module.less';
+import styles from './Tournament.module.less';
 import TournamentStatus from '../TournamentStatus/TournamentStatus';
 import TournamentStatistics from '../TournamentStatistics/TournamentStatistics';
 
-function Player ({ player }) {
+function Tournament ({ player }) {
   const { status, date, countPlayers, countAllPlayers, points } = player;
 
   return (
-    <div className={styles.player}>
+    <div className={styles.tournament}>
       <TournamentStatus status={status} />
       <TournamentStatistics
         date={date}
@@ -19,8 +19,8 @@ function Player ({ player }) {
   )
 }
 
-Player.propTypes = {
+Tournament.propTypes = {
   player: PropTypes.object,
 }
 
-export default Player
+export default Tournament
