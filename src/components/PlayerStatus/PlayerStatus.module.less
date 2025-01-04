@@ -1,0 +1,26 @@
+@import '../../styles/variables/variables.less';
+@import '../../styles/mixins/mixins.less';
+
+.status {
+  transform: rotate(180deg);
+  display: inline-block;
+  writing-mode: vertical-lr;
+  text-align: center;
+  padding-inline: 9px;
+  padding-block: 3px;
+  border-radius: 0 4px 4px 0;
+}
+
+.registering {
+  background-color: @success;
+}
+
+.canceled {
+  background-color: @blue-100;
+}
+
+.text {
+  .font(@font-montserrat, @font-size-sm, @line-height-base, @font-weight-semibold);
+  text-transform: uppercase;
+}
+
