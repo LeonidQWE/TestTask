@@ -1,0 +1,19 @@
+@import '../../styles/variables/variables.less';
+@import '../../styles/mixins/mixins.less';
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.icon {
+  width: 14px;
+  height: 14px;
+  color: @light;
+}
+
+.value {
+  .font(@font-montserrat, @font-size-normal, @line-height-base, @font-weight-medium);
+  color: @white-200;
+}
