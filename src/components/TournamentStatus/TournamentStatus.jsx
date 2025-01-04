@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
-import styles from './PlayerStatus.module.less';
+import styles from './TournamentStatus.module.less';
 
-function PlayerStatus ({ status }) {
+function TournamentStatus ({ status }) {
   const isRegistering = status === 'registering';
 
   return (
@@ -11,8 +11,8 @@ function PlayerStatus ({ status }) {
   )
 }
 
-PlayerStatus.propTypes = {
+TournamentStatus.propTypes = {
   status: PropTypes.string,
 }
 
-export default PlayerStatus
+export default TournamentStatus

@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import styles from './Player.module.less';
-import PlayerStatus from '../PlayerStatus/PlayerStatus';
+import TournamentStatus from '../TournamentStatus/TournamentStatus';
 import TournamentStatistics from '../TournamentStatistics/TournamentStatistics';
 
 function Player ({ player }) {
@@ -8,7 +8,7 @@ function Player ({ player }) {
 
   return (
     <div className={styles.player}>
-      <PlayerStatus status={status} />
+      <TournamentStatus status={status} />
       <TournamentStatistics
         date={date}
         countPlayers={countPlayers}
