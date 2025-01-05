@@ -4,8 +4,8 @@ import styles from './Tournament.module.less';
 import TournamentStatus from '../TournamentStatus/TournamentStatus';
 import TournamentInfo from '../TournamentInfo/TournamentInfo';
 
-function Tournament ({ player }) {
-  const { status, ...info } = player;
+function Tournament ({ tournament }) {
+  const { status, ...info } = tournament;
   const [selected, setSelected] = useState(false);
 
   const handleClickSlectTournament = () => {
@@ -25,7 +25,7 @@ function Tournament ({ player }) {
 }
 
 Tournament.propTypes = {
-  player: PropTypes.object,
+  tournament: PropTypes.object,
 }
 
 export default Tournament;
