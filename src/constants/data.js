@@ -14,7 +14,6 @@ export const DATA = {
       countPlayers: 1000,
       countAllPlayers: 1000,
       points: 1000000,
-      isChoose: false,
     },
     {
       id: 2,
@@ -25,7 +24,6 @@ export const DATA = {
       countPlayers: 1,
       countAllPlayers: 6,
       points: 100,
-      isChoose: false,
     },
     {
       id: 3,
@@ -36,7 +34,8 @@ export const DATA = {
       countPlayers: 1,
       countAllPlayers: 10000,
       points: 1000,
-      isChoose: false,
+      isTime: true,
+      isFreeRoll: true,
     },
     {
       id: 4,
@@ -47,7 +46,6 @@ export const DATA = {
       countPlayers: 1000,
       countAllPlayers: 1000,
       points: 1000000,
-      isChoose: false,
     },
     {
       id: 5,
@@ -58,7 +56,7 @@ export const DATA = {
       countPlayers: 0,
       countAllPlayers: 100,
       points: 146,
-      isChoose: false,
+      isRapid: true,
     },
     {
       id: 6,
@@ -69,7 +67,6 @@ export const DATA = {
       countPlayers: 1000,
       countAllPlayers: 1000,
       points: 1000000,
-      isChoose: false,
     },
   ]
 }
