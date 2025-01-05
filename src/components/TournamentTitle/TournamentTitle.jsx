@@ -19,7 +19,7 @@ function TournamentTitle ({ NL, name, selected, otherInfo }) {
   } = otherInfo
 
   return (
-    <div>
+    <div className={styles.titleContainer}>
       <div className={styles.subtitle}>
         {selected && <Pin />}
         <div className={styles.subtitleText}>{NL}</div>

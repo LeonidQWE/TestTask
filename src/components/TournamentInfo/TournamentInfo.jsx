@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
 import TournamentStatistics from '../TournamentStatistics/TournamentStatistics';
-import styles from './TournamentInfo.module.less';
 import TournamentTitle from '../TournamentTitle/TournamentTitle';
+import Button from '../Button/Button';
+import styles from './TournamentInfo.module.less';
 
 function TournamentInfo ({ info, selected }) {
   const {
@@ -16,12 +17,13 @@ function TournamentInfo ({ info, selected }) {
 
   return (
     <div className={styles.info}>
-      <div>
+      <div className={styles.titleContainer}>
         <TournamentTitle
           NL={NL}
           name={name}
           selected={selected}
           otherInfo={otherInfo}/>
+        <Button />
       </div>
       <TournamentStatistics
         date={date}
