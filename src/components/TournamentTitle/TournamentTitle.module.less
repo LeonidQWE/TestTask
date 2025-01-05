@@ -1,0 +1,21 @@
+@import '../../styles/variables/variables.less';
+@import '../../styles/mixins/mixins.less';
+
+.subtitle {
+  display: flex;
+  gap: 4px;
+
+  &Text {
+    .font(@font-montserrat, @font-size-sm, @line-height-base, @font-weight-semibold);
+    text-transform: uppercase;
+    border: 1px solid @light;
+    border-radius: 2px;
+    padding: 3px;
+  }
+}
+
+.title {
+  .font(@font-montserrat, @h3-font-size, @line-height-base, @font-weight-semibold);
+  margin-top: 9px;
+}
+

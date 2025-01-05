@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import TournamentStatistics from '../TournamentStatistics/TournamentStatistics';
 import styles from './TournamentInfo.module.less';
+import TournamentTitle from '../TournamentTitle/TournamentTitle';
 
 function TournamentInfo ({ info, selected }) {
   const {
@@ -8,10 +9,20 @@ function TournamentInfo ({ info, selected }) {
     countPlayers,
     countAllPlayers,
     points,
+    NL,
+    name,
+    ...otherInfo
   } = info;
 
   return (
     <div className={styles.info}>
+      <div>
+        <TournamentTitle
+          NL={NL}
+          name={name}
+          selected={selected}
+          otherInfo={otherInfo}/>
+      </div>
       <TournamentStatistics
         date={date}
         countPlayers={countPlayers}
