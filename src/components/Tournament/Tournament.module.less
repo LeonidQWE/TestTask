@@ -1,4 +1,22 @@
+@import '../../styles/variables/variables.less';
+
 .tournament {
   border-radius: 4px;
   display: flex;
+  background-color: @card-color-normal;
+
+  @media (min-width: 768px) {
+    &:hover {
+      cursor: pointer;
+      background-color: @card-color-hover;
+    }
+  }
+
+  &:active {
+    background-color: @card-color-pressed;
+  }
+
+  &.selected {
+    background-color: @card-color-pressed;
+  }
 }
