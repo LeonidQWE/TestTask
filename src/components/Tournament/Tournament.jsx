@@ -17,7 +17,9 @@ function Tournament ({ player }) {
       className={`${styles.tournament} ${selected ? styles.selected : ''}`}
       onClick={handleClickSlectTournament}>
       <TournamentStatus status={status} />
-      <TournamentInfo info={info}/>
+      <TournamentInfo
+        selected={selected}
+        info={info}/>
     </div>
   )
 }

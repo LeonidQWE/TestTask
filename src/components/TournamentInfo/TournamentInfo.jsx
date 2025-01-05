@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import TournamentStatistics from '../TournamentStatistics/TournamentStatistics';
 import styles from './TournamentInfo.module.less';
 
-function TournamentInfo ({ info }) {
+function TournamentInfo ({ info, selected }) {
   const {
     date,
     countPlayers,
@@ -24,6 +24,7 @@ function TournamentInfo ({ info }) {
 
 TournamentInfo.propTypes = {
   info: PropTypes.object,
+  selected: PropTypes.bool,
 }
 
 export default TournamentInfo
