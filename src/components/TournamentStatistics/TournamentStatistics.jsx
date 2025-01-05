@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import StatisticsItem from '../StatisticsItem/StatisticsItem';
-import Time from '../../assets/icons/time.svg?react';
+import Clock from '../../assets/icons/clock.svg?react';
 import Players from '../../assets/icons/players.svg?react';
 import Tourney from '../../assets/icons/tourney.svg?react';
 import styles from './TournamentStatistics.module.less';
@@ -13,7 +13,7 @@ function TournamentStatistics ({
 }) {
   const schema = [
     {
-      Icon: <Time className={styles.icon}/>,
+      Icon: <Clock className={styles.icon}/>,
       value: `${date}`,
     },
     {
